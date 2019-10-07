@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-10-07T19:19:57&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-07T19:19:57&#43;08:00" />
-<meta itemprop="wordCount" content="723">
+<meta itemprop="wordCount" content="1078">
 
 
 
@@ -257,6 +257,7 @@
 <ul>
 <li><a href="#作用">作用</a></li>
 <li><a href="#属性">属性</a></li>
+<li><a href="#href">href</a></li>
 <li><a href="#target">target</a></li>
 </ul></li>
 </ul></li>
@@ -300,6 +301,13 @@
 </ul></li>
 </ul></li>
 <li><a href="#其他输入标签">其他输入标签</a></li>
+<li><a href="#补充">补充</a>
+<ul>
+<li>
+<ul>
+<li><a href="#查看写好的html页面">查看写好的html页面</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -317,7 +325,7 @@
 <ul>
 <li>跳转到外部页面</li>
 <li>跳转内部锚点</li>
-<li>跳转到邮箱或电话<br /></li>
+<li>跳转到邮箱或电话</li>
 </ul>
 
 <h4 id="属性">属性</h4>
@@ -329,13 +337,45 @@
 <li>rel=noopener</li>
 </ul>
 
+<h4 id="href">href</h4>
+
+<ul>
+<li><p>网址：</p>
+
+<ul>
+<li>http://</li>
+<li>https://</li>
+<li>//</li>
+</ul></li>
+
+<li><p>路径</p>
+
+<ul>
+<li>/a/b/c</li>
+<li>a/b/c</li>
+<li>index.html</li>
+<li>./index.html</li>
+</ul></li>
+
+<li><p>伪协议</p>
+
+<pre><code class="language-html">&lt;a href=&quot;javascript:;&quot;&gt;空的伪协议，点击链接后页面不会刷新&lt;/a&gt;
+</code></pre></li>
+</ul>
+
+<p>-跳转到邮箱或电话</p>
+
+<pre><code class="language-html">&lt;a href=&quot;mailto:772765729@qq.com&quot;&gt;发送邮件&lt;/a&gt;
+&lt;a href=&quot;tel:17317824743&quot;&gt;打电话&lt;/a&gt;
+</code></pre>
+
 <h4 id="target">target</h4>
 
 <ul>
-<li>_self（默认值）</li>
-<li>_blank</li>
-<li>_top</li>
-<li>_parent</li>
+<li>_self（默认值）：当前页面打开</li>
+<li>_blank：新页面打开</li>
+<li>_top：顶层窗口打开</li>
+<li>_parent：父级窗口打开</li>
 <li>window的name</li>
 <li>iframe的name</li>
 </ul>
@@ -361,14 +401,29 @@
 
 <ul>
 <li>onload：当图片加载成功时运行脚本</li>
-<li>onerror：当图片加载失败时运行脚本</li>
+
+<li><p>onerror：当图片加载失败时运行脚本</p>
+
+<pre><code class="language-html">&lt;script&gt;
+xxx.onload = function() {
+    console.log('图片加载成功')
+}
+xxx.onerror = function() {
+    console.log('图片加载失败')
+    xxx.src = &quot;/404.png&quot;
+}
+&lt;/script&gt;
+</code></pre></li>
 </ul>
 
 <h4 id="响应式">响应式</h4>
 
-<ul>
-<li>max-width:100%</li>
-</ul>
+<pre><code class="language-html">&lt;style&gt;
+img{
+    max-width: 100%;
+}
+&lt;/style&gt;
+</code></pre>
 
 <h2 id="table-标签">&lt;table&gt;标签</h2>
 
@@ -387,9 +442,9 @@
 <h4 id="样式">样式</h4>
 
 <ul>
-<li>table-layout</li>
-<li>border-collapse</li>
-<li>border-spacing</li>
+<li>table-layout(auto/fixed)</li>
+<li>border-collapse：合并边框</li>
+<li>border-spacing：边框间距</li>
 </ul>
 
 <h2 id="form-标签">&lt;form&gt;标签</h2>
@@ -514,6 +569,14 @@
 <li>textarea：长文本</li>
 <li>lable：相关标记</li>
 </ul>
+
+<h2 id="补充">补充</h2>
+
+<h4 id="查看写好的html页面">查看写好的html页面</h4>
+
+<pre><code>yarn global add http-server
+http-server . -c-1
+</code></pre>
 
     </div>
 
