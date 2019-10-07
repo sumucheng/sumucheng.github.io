@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-10-06T23:19:57&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-06T23:19:57&#43;08:00" />
-<meta itemprop="wordCount" content="484">
+<meta itemprop="wordCount" content="430">
 
 
 
@@ -249,11 +249,13 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#html-的历史">HTML 的历史</a></li>
+<li><a href="#html-的历史">HTML 的历史</a>
+<ul>
 <li><a href="#html-第一行">HTML 第一行</a></li>
 <li><a href="#常用的章节标签">常用的章节标签</a></li>
 <li><a href="#常用的内容标签">常用的内容标签</a></li>
-<li><a href="#全局属性">全局属性</a></li>
+<li><a href="#常用的全局属性">常用的全局属性</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -265,6 +267,7 @@
 
 <h1 id="html-的历史">HTML 的历史</h1>
 
+<blockquote>
 <ul>
 <li>1990 年左右，Tim Berners-Lee 爵士发明了初版 HTML</li>
 <li>1993 年 6 月，IETF（互联网工程工作小组）工作小組发布第一版草案</li>
@@ -276,54 +279,231 @@
 <li>2001 年 5 月，XHTML1.1 发布</li>
 <li>2014 年 10 月，HTML5.0 发布</li>
 </ul>
+</blockquote>
 
-<h1 id="html-第一行">HTML 第一行</h1>
+<h2 id="html-第一行">HTML 第一行</h2>
 
-<pre><code class="language-javascript">&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 </code></pre>
 
-<h1 id="常用的章节标签">常用的章节标签</h1>
+<h2 id="常用的章节标签">常用的章节标签</h2>
 
-<ul>
-<li>h1~h6：标题</li>
-<li>section：章节</li>
-<li>article：独立内容</li>
-<li>p：段落</li>
-<li>header：页头内容</li>
-<li>footer：页脚内容</li>
-<li>main：主要内容</li>
-<li>aside：侧边栏</li>
-<li>div：区域块</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+</thead>
 
-<h1 id="常用的内容标签">常用的内容标签</h1>
+<tbody>
+<tr>
+<td align="left">h1~h6</td>
+<td align="left">标题</td>
+</tr>
 
-<ul>
-<li>ol+li:有序列表</li>
-<li>ul+li:无序列表</li>
-<li>dl+dt+dd：描述列表</li>
-<li>pre：保留空格和换行，文本表示为等宽字体</li>
-<li>hr：分割线</li>
-<li>br：换行</li>
-<li>a：链接</li>
-<li>em：强调（斜线）</li>
-<li>strong：重点（加粗）</li>
-<li>code：代码</li>
-<li>quote：引用（内联）</li>
-<li>blockquote：引用（块）</li>
-</ul>
+<tr>
+<td align="left">div</td>
+<td align="left">块级区域</td>
+</tr>
 
-<h1 id="全局属性">全局属性</h1>
+<tr>
+<td align="left">span</td>
+<td align="left">内联区域</td>
+</tr>
 
-<ul>
-<li>class：元素类名</li>
-<li>id：元素唯一 ID</li>
-<li>contenteditable:内容可编辑</li>
-<li>hidden：隐藏元素</li>
-<li>style：元素样式</li>
-<li>title：元素额外信息</li>
-<li>tabindex：Tab 键控制次序</li>
-</ul>
+<tr>
+<td align="left">section</td>
+<td align="left">章节</td>
+</tr>
+
+<tr>
+<td align="left">article</td>
+<td align="left">文章内容</td>
+</tr>
+
+<tr>
+<td align="left">header</td>
+<td align="left">头部内容</td>
+</tr>
+
+<tr>
+<td align="left">footer</td>
+<td align="left">底部内容</td>
+</tr>
+
+<tr>
+<td align="left">main</td>
+<td align="left">主要内容</td>
+</tr>
+
+<tr>
+<td align="left">aside</td>
+<td align="left">侧边栏</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="常用的内容标签">常用的内容标签</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ol</td>
+<td align="left">有序列表</td>
+</tr>
+
+<tr>
+<td align="left">ul</td>
+<td align="left">无序列表</td>
+</tr>
+
+<tr>
+<td align="left">li</td>
+<td align="left">列表项</td>
+</tr>
+
+<tr>
+<td align="left">dl</td>
+<td align="left">描述列表</td>
+</tr>
+
+<tr>
+<td align="left">dt</td>
+<td align="left">描述列表中的项目（term）</td>
+</tr>
+
+<tr>
+<td align="left">dd</td>
+<td align="left">描述列表中的项目描述</td>
+</tr>
+
+<tr>
+<td align="left">pre</td>
+<td align="left">预格式文本（保留空格和换行，文本表示为等宽字体）</td>
+</tr>
+
+<tr>
+<td align="left">br</td>
+<td align="left">换行</td>
+</tr>
+
+<tr>
+<td align="left">hr</td>
+<td align="left">水平分割线</td>
+</tr>
+
+<tr>
+<td align="left">a</td>
+<td align="left">链接</td>
+</tr>
+
+<tr>
+<td align="left">em</td>
+<td align="left">强调文本（斜体）</td>
+</tr>
+
+<tr>
+<td align="left">strong</td>
+<td align="left">强调文本（粗体）</td>
+</tr>
+
+<tr>
+<td align="left">i</td>
+<td align="left">斜体文本</td>
+</tr>
+
+<tr>
+<td align="left">b</td>
+<td align="left">粗体文本</td>
+</tr>
+
+<tr>
+<td align="left">code</td>
+<td align="left">代码文本</td>
+</tr>
+
+<tr>
+<td align="left">q</td>
+<td align="left">内联引用</td>
+</tr>
+
+<tr>
+<td align="left">blockquote</td>
+<td align="left">块引用</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="常用的全局属性">常用的全局属性</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">class</td>
+<td align="left">元素类名</td>
+</tr>
+
+<tr>
+<td align="left">id</td>
+<td align="left">元素唯一 ID</td>
+</tr>
+
+<tr>
+<td align="left">style</td>
+<td align="left">元素样式</td>
+</tr>
+
+<tr>
+<td align="left">title</td>
+<td align="left">元素额外信息</td>
+</tr>
+
+<tr>
+<td align="left">hidden</td>
+<td align="left">隐藏元素</td>
+</tr>
+
+<tr>
+<td align="left">tabindex</td>
+<td align="left">Tab 键控制次序</td>
+</tr>
+
+<tr>
+<td align="left">contenteditable</td>
+<td align="left">内容可编辑</td>
+</tr>
+
+<tr>
+<td align="left">lang</td>
+<td align="left">元素的语言代码</td>
+</tr>
+
+<tr>
+<td align="left">spellcheck</td>
+<td align="left">检查拼写错误</td>
+</tr>
+
+<tr>
+<td align="left">translate</td>
+<td align="left">翻译元素的值</td>
+</tr>
+</tbody>
+</table>
 
     </div>
 
