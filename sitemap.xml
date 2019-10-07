@@ -9,22 +9,22 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/test/</loc>
+    <lastmod>2019-10-06T23:19:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-10-01T23:19:57+08:00</lastmod>
+    <lastmod>2019-10-06T23:19:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-10-01T23:19:57+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/test/</loc>
-    <lastmod>2019-10-01T23:19:57+08:00</lastmod>
+    <lastmod>2019-10-06T23:19:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
