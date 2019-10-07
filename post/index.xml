@@ -6,10 +6,19 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Oct 2019 23:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2019 19:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML入门笔记2—常用标签</title>
+      <link>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
+      <pubDate>Mon, 07 Oct 2019 19:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
+      <description>&amp;lt;a&amp;gt;标签 属性 &amp;gt; href &amp;gt; target &amp;gt; download &amp;gt; rel=noopener - 作用 - 跳转到外部页面 -&amp;gt; href=&amp;ldquo;网址/路径&amp;rdquo; - 跳转内部锚点-&amp;gt; href=&amp;ldquo;#id&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
