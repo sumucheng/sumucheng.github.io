@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>HTML入门笔记2—常用标签</title>
+      <title>HTML入门笔记2 — 常用标签</title>
       <link>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
       <pubDate>Mon, 07 Oct 2019 19:19:57 +0800</pubDate>
       
       <guid>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
-      <description>&amp;lt;a&amp;gt;标签 属性 href target download rel=noopener 作用 跳转到外部页面 -&amp;gt; href=&amp;ldquo;网址/路径&amp;rdquo; 跳转内部锚点-&amp;gt; href=&amp;ldquo;#id&amp;rdquo; 跳转到邮箱或电</description>
+      <description>&amp;lt;a&amp;gt;标签 作用 跳转到外部页面 跳转内部锚点 跳转到邮箱或电话 属性 href：指定链接的目标 target：规定在何处打开目标 downlo</description>
     </item>
     
     <item>
