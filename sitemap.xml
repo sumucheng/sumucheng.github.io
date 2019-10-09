@@ -16,6 +16,13 @@
   </url>
   
   <url>
+    <loc>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</loc>
+    <lastmod>2019-10-09T15:19:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://chenyiran.top/</loc>
     <lastmod>2019-10-09T15:19:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -46,6 +53,20 @@
   <url>
     <loc>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</loc>
     <lastmod>2019-10-06T23:19:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8github%E9%A2%84%E8%A7%88html/</loc>
+    <lastmod>2019-10-05T19:19:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2019-10-04T19:19:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
