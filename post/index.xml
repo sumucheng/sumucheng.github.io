@@ -6,10 +6,19 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Oct 2019 19:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 15:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS入门笔记2</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
+      <pubDate>Wed, 09 Oct 2019 15:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
+      <description>基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到</description>
+    </item>
     
     <item>
       <title>CSS入门笔记1</title>
@@ -18,15 +27,6 @@
       
       <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
       <description>CSS 是什么？ 层叠样式表 样式层叠 选择器层叠 文件层叠 CSS 的历史 版本 时间 描述 CSS1 1996 年 CSS2 1998 年 添加了定位、z-index、media CSS2.1 2004~2011 年 使用最广泛的版本，</description>
-    </item>
-    
-    <item>
-      <title>CSS入门笔记2</title>
-      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
-      <pubDate>Tue, 08 Oct 2019 19:19:57 +0800</pubDate>
-      
-      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
-      <description>基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到</description>
     </item>
     
     <item>
