@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>KIKI</title>
+  <title>CSS入门笔记2 - KIKI</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,6 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="KIKI" />
+  <meta name="description" content="基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到" />
+
 
 
 
@@ -32,8 +34,8 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="http://chenyiran.top/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="KIKI" />
+<link rel="canonical" href="http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/" />
+
 
 
 
@@ -56,18 +58,26 @@
 
 
 
-<meta property="og:title" content="KIKI" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://chenyiran.top/" />
+<meta property="og:title" content="CSS入门笔记2" />
+<meta property="og:description" content="基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/" />
+<meta property="article:published_time" content="2019-10-08T19:19:57+08:00" />
+<meta property="article:modified_time" content="2019-10-08T19:19:57+08:00" />
+<meta itemprop="name" content="CSS入门笔记2">
+<meta itemprop="description" content="基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到">
 
-<meta property="og:updated_time" content="2019-10-08T19:19:57+08:00" />
-<meta itemprop="name" content="KIKI">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2019-10-08T19:19:57&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-08T19:19:57&#43;08:00" />
+<meta itemprop="wordCount" content="609">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="KIKI"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="CSS入门笔记2"/>
+<meta name="twitter:description" content="基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -212,164 +222,265 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
-  
-  
+          <article class="post bg-white">
     
-  
-  
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">CSS入门笔记2</h1>
       
-      <a class="post-link" href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">CSS入门笔记1</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2019-10-08" class="post-time">
+          2019-10-08
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2019-10-08" class="post-time">
-        2019-10-08
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      CSS 是什么？ 层叠样式表 样式层叠 选择器层叠 文件层叠 CSS 的历史 版本 时间 描述 CSS1 1996 年 CSS2 1998 年 添加了定位、z-index、media CSS2.1 2004~2011 年 使用最广泛的版本，
-    </div>
-    <div class="read-more">
-      <a href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="read-more-link">Read more</a>
-    </div>
-    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#基本概念">基本概念</a></li>
+<li><a href="#文档流">文档流</a></li>
+<li><a href="#当内容大于容器时-使用-overflow-溢出">当内容大于容器时，使用 overflow（溢出）</a></li>
+<li><a href="#盒模型-box-model">盒模型 Box Model</a></li>
+<li><a href="#margin-合并">margin 合并</a></li>
+<li><a href="#基本单位">基本单位</a></li>
+</ul></li>
+</ul>
+</nav>
   </div>
-</article>
+</div>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/">CSS入门笔记2</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2019-10-08" class="post-time">
-        2019-10-08
-      </time>
+    <div class="post-content">
       
-      
-      
-      
+
+<h2 id="基本概念">基本概念</h2>
+
+<ul>
+<li>文档流 Normal Flow</li>
+<li>块（block）、内联（inline）、内联块（inline-block）</li>
+<li>两种盒模型</li>
+<li>margin 合并</li>
+</ul>
+
+<h2 id="文档流">文档流</h2>
+
+<ul>
+<li><p>流动方向</p>
+
+<ul>
+<li>inline 元素从左到右，到达最右才会换行，一个元素可以跨行</li>
+<li>block 元素从上到下，每一个元素都另起一行</li>
+<li>inline-block 元素也是从左到右，但一个元素不会跨行</li>
+</ul></li>
+
+<li><p>宽度</p>
+
+<ul>
+<li>inline 宽度为内部 inline 元素的和，不能用 width 指定</li>
+<li>block 默认自动计算宽度（不等于 100%），可以用 width 指定</li>
+<li>inline-block 宽度为内部 inline 元素的和，但可以用 width 指定</li>
+</ul></li>
+
+<li><p>高度</p>
+
+<ul>
+<li>inline 高度由 line-height 间接确定，和 height 无关</li>
+<li>block 高度由内部文档流元素决定（无元素时高度为 0），可以设置 height</li>
+<li>inline-block 与 block 类似，可以设置 height</li>
+</ul></li>
+
+<li><p>脱离文档流</p>
+
+<ul>
+<li>position:absolute/fixed;</li>
+<li>float:;</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>注意事项</p>
+
+<ul>
+<li>不要在 inline 元素中插入 block 元素</li>
+<li>尽量不要把宽度设置成 100%</li>
+</ul>
+</blockquote>
+
+<h2 id="当内容大于容器时-使用-overflow-溢出">当内容大于容器时，使用 overflow（溢出）</h2>
+
+<ul>
+<li>overflow:visible: 显示溢出部分</li>
+<li>overflow:hidden: 隐藏溢出部分</li>
+<li>overflow📜 显示滚动条</li>
+<li>overflow:auto：当内容大于容器时，显示滚动条，否则不显示</li>
+</ul>
+
+<h2 id="盒模型-box-model">盒模型 Box Model</h2>
+
+<ul>
+<li>CSS 盒模型（box model）本质上是一个封装周围 HTML 元素的盒子，它包括:
+
+<ul>
+<li>边距 margin</li>
+<li>边框 border</li>
+<li>填充 padding</li>
+<li>内容 content</li>
+</ul></li>
+<li>CSS3 引入了 box-sizing 属性来设置盒模型的类型，包括三个取值： content-box，padding-box 和 border-box</li>
+<li>content-box 内容盒
+
+<ul>
+<li>内容就是盒子的边界</li>
+<li>width/height = content 宽度/高度</li>
+</ul></li>
+<li>border-box 边框盒
+
+<ul>
+<li>框架才是盒子的边界</li>
+<li>width/height = content 宽度/高度 + padding + border</li>
+</ul></li>
+</ul>
+
+<h2 id="margin-合并">margin 合并</h2>
+
+<ul>
+<li>只有上下方向存在 margin 合并，左右方向不合并</li>
+
+<li><p>取消父子的 margin 合并</p>
+
+<ul>
+<li>设置 border/padding</li>
+<li>overflow : hidden;</li>
+<li>display : flex;</li>
+</ul></li>
+
+<li><p>取消兄弟的 margin 合并</p>
+
+<ul>
+<li>使用 inline-block</li>
+</ul></li>
+</ul>
+
+<h2 id="基本单位">基本单位</h2>
+
+<ul>
+<li>长度单位
+
+<ul>
+<li>px 像素</li>
+<li>em 相对于自身 font-size 的倍数</li>
+<li>%</li>
+<li>整数</li>
+<li>rem</li>
+<li>vw/vh</li>
+</ul></li>
+<li>颜色
+
+<ul>
+<li>#FFFFFF/#FFF //十六进制</li>
+<li>rgb(0,0,0) / rgba(0,0,0,1)</li>
+<li>hsl(360,100%,100%) //色相，饱和度，亮度</li>
+</ul></li>
+</ul>
+
     </div>
-  </header>
-  
-  <div class="post-content">
+
     
-    <div class="post-summary">
-      基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到
-    </div>
-    <div class="read-more">
-      <a href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/" class="read-more-link">Read more</a>
-    </div>
     
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">KIKI</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2019-10-08
       
-      <a class="post-link" href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/">HTML入门笔记2 — 常用标签</a>
-    </h1>
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
     
-    <div class="post-meta">
-      <time datetime="2019-10-07" class="post-time">
-        2019-10-07
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      &lt;a&gt;标签 作用 跳转到外部页面 跳转内部锚点 跳转到邮箱或电话 属性 href：指定链接的目标 target：规定在何处打开目标 downlo
-    </div>
-    <div class="read-more">
-      <a href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/" class="read-more-link">Read more</a>
-    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">CSS入门笔记1</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/">
+            <span class="next-text nav-default">HTML入门笔记2 — 常用标签</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-  </div>
-</article>
 
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">HTML入门笔记1</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-10-06" class="post-time">
-        2019-10-06
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      HTML 的历史 1990 年左右，Tim Berners-Lee 爵士发明了初版 HTML 1993 年 6 月，IETF（互联网工程工作小组）工作小組发布第一版草案 1994 年 10 月，W3C 成立，HTML 标准规
-    </div>
-    <div class="read-more">
-      <a href="/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
         </div>
       </div>
