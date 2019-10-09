@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="KIKI" />
-  <meta name="description" content="hugo 简介 go 语言实现的恶一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载 将安装路径加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网教程：http" />
+  <meta name="description" content="hugo 简介 go 语言实现的一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载安装包 https://github.com/gohugoio/hugo/releases 解压 将 hugo.exe 所在路径添加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网" />
 
 
 
@@ -59,25 +59,25 @@
 
 
 <meta property="og:title" content="使用hugo搭建个人博客" />
-<meta property="og:description" content="hugo 简介 go 语言实现的恶一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载 将安装路径加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网教程：http" />
+<meta property="og:description" content="hugo 简介 go 语言实现的一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载安装包 https://github.com/gohugoio/hugo/releases 解压 将 hugo.exe 所在路径添加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://chenyiran.top/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
 <meta property="article:published_time" content="2019-10-04T19:19:57+08:00" />
 <meta property="article:modified_time" content="2019-10-04T19:19:57+08:00" />
 <meta itemprop="name" content="使用hugo搭建个人博客">
-<meta itemprop="description" content="hugo 简介 go 语言实现的恶一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载 将安装路径加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网教程：http">
+<meta itemprop="description" content="hugo 简介 go 语言实现的一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载安装包 https://github.com/gohugoio/hugo/releases 解压 将 hugo.exe 所在路径添加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网">
 
 
 <meta itemprop="datePublished" content="2019-10-04T19:19:57&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-04T19:19:57&#43;08:00" />
-<meta itemprop="wordCount" content="233">
+<meta itemprop="wordCount" content="242">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用hugo搭建个人博客"/>
-<meta name="twitter:description" content="hugo 简介 go 语言实现的恶一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载 将安装路径加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网教程：http"/>
+<meta name="twitter:description" content="hugo 简介 go 语言实现的一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载安装包 https://github.com/gohugoio/hugo/releases 解压 将 hugo.exe 所在路径添加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -266,9 +266,7 @@
 
 <h2 id="hugo-简介">hugo 简介</h2>
 
-<blockquote>
-<p>go 语言实现的恶一个博客生成器</p>
-</blockquote>
+<p>go 语言实现的一个博客生成器</p>
 
 <h2 id="安装-hugo">安装 hugo</h2>
 
@@ -282,8 +280,9 @@
 <li>windows
 
 <ul>
-<li>下载</li>
-<li>将安装路径加到 PATH</li>
+<li>下载安装包 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
+<li>解压</li>
+<li>将 hugo.exe 所在路径添加到 PATH</li>
 <li>重启终端，运行 hugo version 查看是否安装成功</li>
 </ul></li>
 </ul>
@@ -320,18 +319,15 @@ hugo server -D
 hugo server
 </code></pre></li>
 
-<li><p>step5: 自定义主题</p></li>
-</ul>
+<li><p>step5: 自定义主题</p>
 
-<p>在编辑器中打开 config.toml, 并修改</p>
-
-<pre><code>baseURL = &quot;https://example.org/&quot;
+<pre><code>//在编辑器中打开 config.toml, 并修改
+baseURL = &quot;https://example.org/&quot;
 languageCode = &quot;en-us&quot;
 title = &quot;My New Hugo Site&quot;
 theme = &quot;ananke&quot;
-</code></pre>
+</code></pre></li>
 
-<ul>
 <li><p>step6: 建立静态页面</p>
 
 <pre><code>hugo

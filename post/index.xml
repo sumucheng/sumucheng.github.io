@@ -71,7 +71,7 @@
       <pubDate>Fri, 04 Oct 2019 19:19:57 +0800</pubDate>
       
       <guid>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>hugo 简介 go 语言实现的恶一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载 将安装路径加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网教程：http</description>
+      <description>hugo 简介 go 语言实现的一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载安装包 https://github.com/gohugoio/hugo/releases 解压 将 hugo.exe 所在路径添加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网</description>
     </item>
     
   </channel>
