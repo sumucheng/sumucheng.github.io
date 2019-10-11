@@ -17,7 +17,7 @@
       <pubDate>Fri, 11 Oct 2019 16:19:57 +0800</pubDate>
       
       <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</guid>
-      <description>##</description>
+      <description>浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计</description>
     </item>
     
     <item>

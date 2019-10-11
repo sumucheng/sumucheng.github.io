@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Fri, 11 Oct 2019 16:19:57 +0800</lastBuildDate>
     
-        <atom:link href="http://chenyiran.top/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://chenyiran.top/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,32 +17,90 @@
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
       <guid>http://chenyiran.top/about/</guid>
-      
-        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
-
-&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-      
+      <description>Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
     </item>
     
     <item>
-      <title>Posts</title>
-      <link>http://chenyiran.top/post/</link>
+      <title>CSS入门笔记5 - 动画</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</link>
       <pubDate>Fri, 11 Oct 2019 16:19:57 +0800</pubDate>
       
-      <guid>http://chenyiran.top/post/</guid>
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</guid>
+      <description>浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计</description>
+    </item>
+    
+    <item>
+      <title>CSS入门笔记4 - 定位</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/</link>
+      <pubDate>Fri, 11 Oct 2019 15:19:57 +0800</pubDate>
       
-        <description></description>
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/</guid>
+      <description>div 的分层 内联子元素 浮动元素 块级子元素 border background position static relative absolute fixed sticky position:static 默认值，仍处于文档流 position:relative 使用场景：给 absolute 元素做父元素 不脱离文档流 position:absolute 使用场景：脱离原来的场景</description>
+    </item>
+    
+    <item>
+      <title>CSS入门笔记3 - 布局</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</link>
+      <pubDate>Wed, 09 Oct 2019 20:19:57 +0800</pubDate>
       
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</guid>
+      <description>布局方式 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度 布局类型 float 布</description>
+    </item>
+    
+    <item>
+      <title>CSS入门笔记2</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
+      <pubDate>Wed, 09 Oct 2019 15:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
+      <description>基本概念 文档流 Normal Flow 块（block）、内联（inline）、内联块（inline-block） 两种盒模型 margin 合并 文档流 流动方向 inline 元素从左到右，到</description>
+    </item>
+    
+    <item>
+      <title>CSS入门笔记1</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Tue, 08 Oct 2019 19:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>CSS 是什么？ 层叠样式表 样式层叠 选择器层叠 文件层叠 CSS 的历史 版本 时间 描述 CSS1 1996 年 CSS2 1998 年 添加了定位、z-index、media CSS2.1 2004~2011 年 使用最广泛的版本，</description>
+    </item>
+    
+    <item>
+      <title>HTML入门笔记2 — 常用标签</title>
+      <link>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
+      <pubDate>Mon, 07 Oct 2019 19:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
+      <description>&amp;lt;a&amp;gt;标签 作用 跳转到外部页面 跳转内部锚点 跳转到邮箱或电话 属性 href：指定链接的目标 target：规定在何处打开目标 downlo</description>
+    </item>
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sun, 06 Oct 2019 23:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>HTML 的历史 1990 年左右，Tim Berners-Lee 爵士发明了初版 HTML 1993 年 6 月，IETF（互联网工程工作小组）工作小組发布第一版草案 1994 年 10 月，W3C 成立，HTML 标准规</description>
+    </item>
+    
+    <item>
+      <title>使用github pages预览HTML</title>
+      <link>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8github%E9%A2%84%E8%A7%88html/</link>
+      <pubDate>Sat, 05 Oct 2019 19:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8github%E9%A2%84%E8%A7%88html/</guid>
+      <description>创建个人 github 仓库 仓库名设为：[github 用户名].github.io 创建本地仓库 cd public git init git add . git commit 关联远程 github 仓库 git remote add origin git@github.com:[github 用户名]/[git</description>
+    </item>
+    
+    <item>
+      <title>使用hugo搭建个人博客</title>
+      <link>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 04 Oct 2019 19:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>hugo 简介 go 语言实现的一个博客生成器 安装 hugo mac brew install hugo hugo version windows 下载安装包 https://github.com/gohugoio/hugo/releases 解压 将 hugo.exe 所在路径添加到 PATH 重启终端，运行 hugo version 查看是否安装成功 使用 hugo 搭建博客 官网</description>
     </item>
     
   </channel>
