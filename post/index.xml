@@ -6,10 +6,19 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Oct 2019 15:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2019 16:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS入门笔记5 - 动画</title>
+      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</link>
+      <pubDate>Fri, 11 Oct 2019 16:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</guid>
+      <description>##</description>
+    </item>
     
     <item>
       <title>CSS入门笔记4 - 定位</title>
@@ -21,27 +30,9 @@
     </item>
     
     <item>
-      <title>CSS入门笔记5 - 动画</title>
-      <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</link>
-      <pubDate>Fri, 11 Oct 2019 15:19:57 +0800</pubDate>
-      
-      <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</guid>
-      <description>##</description>
-    </item>
-    
-    <item>
-      <title>JS入门笔记1</title>
-      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
-      <pubDate>Wed, 09 Oct 2019 18:20:57 +0800</pubDate>
-      
-      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
-      <description>JS 概述 -</description>
-    </item>
-    
-    <item>
       <title>CSS入门笔记3 - 布局</title>
       <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</link>
-      <pubDate>Wed, 09 Oct 2019 18:19:57 +0800</pubDate>
+      <pubDate>Wed, 09 Oct 2019 20:19:57 +0800</pubDate>
       
       <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</guid>
       <description>布局方式 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度 布局类型 float 布</description>
