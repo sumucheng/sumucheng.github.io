@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSS入门笔记3 -  CSS布局 - KIKI</title>
+  <title>CSS入门笔记3 - 布局 - KIKI</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="KIKI" />
-  <meta name="description" content="基本概念 布局类型 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度" />
+  <meta name="description" content="布局方式 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度 布局类型 float 布" />
 
 
 
@@ -58,26 +58,26 @@
 
 
 
-<meta property="og:title" content="CSS入门笔记3 -  CSS布局" />
-<meta property="og:description" content="基本概念 布局类型 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度" />
+<meta property="og:title" content="CSS入门笔记3 - 布局" />
+<meta property="og:description" content="布局方式 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度 布局类型 float 布" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/" />
-<meta property="article:published_time" content="2019-10-09T15:19:57+08:00" />
-<meta property="article:modified_time" content="2019-10-09T15:19:57+08:00" />
-<meta itemprop="name" content="CSS入门笔记3 -  CSS布局">
-<meta itemprop="description" content="基本概念 布局类型 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度">
+<meta property="article:published_time" content="2019-10-09T18:19:57+08:00" />
+<meta property="article:modified_time" content="2019-10-09T18:19:57+08:00" />
+<meta itemprop="name" content="CSS入门笔记3 - 布局">
+<meta itemprop="description" content="布局方式 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度 布局类型 float 布">
 
 
-<meta itemprop="datePublished" content="2019-10-09T15:19:57&#43;08:00" />
-<meta itemprop="dateModified" content="2019-10-09T15:19:57&#43;08:00" />
-<meta itemprop="wordCount" content="68">
+<meta itemprop="datePublished" content="2019-10-09T18:19:57&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-09T18:19:57&#43;08:00" />
+<meta itemprop="wordCount" content="450">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CSS入门笔记3 -  CSS布局"/>
-<meta name="twitter:description" content="基本概念 布局类型 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度"/>
+<meta name="twitter:title" content="CSS入门笔记3 - 布局"/>
+<meta name="twitter:description" content="布局方式 固定宽度布局：一般宽度为 960 / 1000 / 1024 px 不固定宽度布局：主要依靠文档流的原理布局 响应式布局：PC 上固定宽度，移动端不固定宽度 布局类型 float 布"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -225,7 +225,7 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">CSS入门笔记3 -  CSS布局</h1>
+      <h1 class="post-title">CSS入门笔记3 - 布局</h1>
       
       <div class="post-meta">
         <time datetime="2019-10-09" class="post-time">
@@ -251,7 +251,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#基本概念">基本概念</a></li>
+<li><a href="#布局方式">布局方式</a></li>
+<li><a href="#布局类型">布局类型</a></li>
+<li><a href="#float-布局">float 布局</a></li>
+<li><a href="#flex-布局">flex 布局</a></li>
+<li><a href="#grid-布局">grid 布局</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -262,16 +266,141 @@
     <div class="post-content">
       
 
-<h2 id="基本概念">基本概念</h2>
-
-<ul>
-<li>布局类型
+<h2 id="布局方式">布局方式</h2>
 
 <ul>
 <li>固定宽度布局：一般宽度为 960 / 1000 / 1024 px</li>
 <li>不固定宽度布局：主要依靠文档流的原理布局</li>
 <li>响应式布局：PC 上固定宽度，移动端不固定宽度</li>
+</ul>
+
+<h2 id="布局类型">布局类型</h2>
+
+<ul>
+<li>float 布局</li>
+<li>flex 布局</li>
+<li>grid 布局</li>
+</ul>
+
+<p><img src="../../static/2.png" alt="布局类型选择" /></p>
+
+<h2 id="float-布局">float 布局</h2>
+
+<ul>
+<li>子元素添加 float 和 width 属性</li>
+
+<li><p>父元素添加.clearfix 类</p>
+
+<pre><code class="language-css">.clearfix:after {
+content: &quot;&quot;;
+display: block;
+clear: both;
+}
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>注意事项</p>
+
+<ul>
+<li>在宽度上可以留一些空间，或者每行最后一个元素不设 width</li>
+<li>不需要做响应式，因为手机上没有 IE</li>
+<li>宽度固定的块元素的左右 margin 设为 auto 会使其居中</li>
+<li>margin-left:auto; margin-right:auto; 比 margin:0 auto 要好</li>
+<li>负 margin</li>
+<li>float 布局的缺点：需要程序员自己计算宽度，不灵活，无法适应手机页面</li>
+</ul>
+</blockquote>
+
+<h2 id="flex-布局">flex 布局</h2>
+
+<ul>
+<li><p>flex container 的样式</p>
+
+<pre><code class="language-css">/*让一个元素变成 flex 容器*/
+display: flex;
+/*改变主轴 item 的流动方向*/
+flex-direction: row | row-reverse | column |column-reverse;
+/*设置是否自动换行*/
+flex-wrap: nowrap | wrap | wrap-reverse;
+/*主轴对齐方式*/
+justify-content: flex-start |
+flex-end|center|space-between|space-around|space-evenly;
+/*次轴对齐方式*/
+align-items: flex-start | flex-end|center|stretch|baseline;
+</code></pre></li>
+
+<li><p>flex item 的样式</p>
+
+<ul>
+<li>order</li>
+<li>flex-grow</li>
+<li>flex-shrink</li>
+<li>flex-basis</li>
+<li>align-self:定制 align-items</li>
 </ul></li>
+</ul>
+
+<blockquote>
+<p>注意事项</p>
+
+<ul>
+<li>尽量不把 width 和 height 写死，适应 min-width/height 和 max-width/height</li>
+<li>使用 margin-xxx:auto 可以达到类似 space-between 的效果</li>
+</ul>
+</blockquote>
+
+<h2 id="grid-布局">grid 布局</h2>
+
+<ul>
+<li><p>grid container 样式</p>
+
+<pre><code class="language-css">.container {
+display: grid;
+grid-template-columns: 40px 50px auto 50px 40px;
+grid-template-rows: 25% 100px auto;
+}
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 2fr;
+}
+</code></pre></li>
+
+<li><p>grid item 样式</p>
+
+<pre><code class="language-css">.item {
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+</code></pre></li>
+
+<li><p>grid</p>
+
+<pre><code class="language-css">.container {
+display: grid;
+grid-template-columns:50px 50px 50px 50px;
+gird-template-rows:auto;
+grid-template-areas:
+&quot;header header header header&quot;
+&quot;main mian . sidebar&quot;
+&quot;footer footer footer footer&quot;;
+}
+.a{
+grid-area:header;
+}
+.b{
+grid-area:main;
+}
+.c{
+grid-area:sidebar;
+}
+.d{
+grid-area:footer;
+}
+</code></pre></li>
 </ul>
 
     </div>
@@ -307,7 +436,7 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/">
+          <a class="prev" href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -317,12 +446,12 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">CSS入门笔记2</span>
+            <span class="prev-text nav-default">JS入门笔记1</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">
-            <span class="next-text nav-default">CSS入门笔记1</span>
+          <a class="next" href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/">
+            <span class="next-text nav-default">CSS入门笔记2</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
