@@ -6,10 +6,37 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Oct 2019 16:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Oct 2019 13:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTTP入门笔记2 - 请求和响应</title>
+      <link>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
+      <pubDate>Sat, 12 Oct 2019 13:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
+      <description>发送请求 在浏览器的地址栏中输入域名 使用 curl 命令 User Agent 用户代理 比如浏览器和 curl 响应 用 if-else 判断路径 如果是已知路径，一般返回 200 如果是未知路径，一般返回 404 -</description>
+    </item>
+    
+    <item>
+      <title>JavaScript的诞生</title>
+      <link>http://chenyiran.top/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Sat, 12 Oct 2019 13:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <description>大事记 1994 年，网景公司（Netscape）发布了 Navigator 浏览器 0.9 版，这是历史上第一个比较成熟的网络浏览器，但是只能用来浏览，不具备与访问者互动的能力</description>
+    </item>
+    
+    <item>
+      <title>HTTP入门笔记1 - URL</title>
+      <link>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sat, 12 Oct 2019 12:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>IP Internet Protocol 互联网协议 协议内容 如何定位一台设备 如何封装数据报文，以和其他设备交流 外网 IP 只要路由器连上电信/联通的服务器，那么路由器就会有一个外网 I</description>
+    </item>
     
     <item>
       <title>CSS入门笔记5 - 动画</title>
@@ -18,15 +45,6 @@
       
       <guid>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</guid>
       <description>浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计</description>
-    </item>
-    
-    <item>
-      <title>HTTP入门笔记1 - URL</title>
-      <link>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
-      <pubDate>Fri, 11 Oct 2019 16:19:57 +0800</pubDate>
-      
-      <guid>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
-      <description>IP Internet Protocol 互联网协议 协议内容 如何定位一台设备 如何封装数据报文，以和其他设备交流 外网 IP 只要路由器连上电信/联通的服务器，那么路由器就会有一个外网 I</description>
     </item>
     
     <item>
