@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>HTTP入门笔记1 - URL</title>
+      <link>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Fri, 11 Oct 2019 16:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>IP Internet Protocol 互联网协议 协议内容 如何定位一台设备 如何封装数据报文，以和其他设备交流 外网 IP 只要路由器连上电信/联通的服务器，那么路由器就会有一个外网 I</description>
+    </item>
+    
+    <item>
       <title>CSS入门笔记4 - 定位</title>
       <link>http://chenyiran.top/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/</link>
       <pubDate>Fri, 11 Oct 2019 15:19:57 +0800</pubDate>
