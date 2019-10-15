@@ -6,10 +6,28 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Oct 2019 20:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2019 20:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS入门笔记3 - 数据类型</title>
+      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</link>
+      <pubDate>Tue, 15 Oct 2019 20:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/</guid>
+      <description>转义 \t tab 制表符 \n 换行 \r 回车 \ \ \uFFFF 表示对应的 Unicode 字符 base64 转码 window.btoa window.atob 五个 falsy 值 undefined null 0 NaN &amp;ldquo; undefined 与 null 没区别 如果一个变量声明了，但没有赋值，那么默认值就是 undefined 如果</description>
+    </item>
+    
+    <item>
+      <title>JS入门笔记4 - 对象</title>
+      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/</link>
+      <pubDate>Tue, 15 Oct 2019 20:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/</guid>
+      <description>object 对象 定义 无序的数据集合 键值对的集合 写法 let obj={&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:18} let obj =new Object({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;}) console.log({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:18}) 键名是字符串，不是标识符，可以包含任意字符，包括空字符串、空格字符串 引号可以省略，省略</description>
+    </item>
     
     <item>
       <title>JS入门笔记2 - 语法</title>
