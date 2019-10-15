@@ -6,10 +6,37 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Oct 2019 13:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2019 20:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS入门笔记2 - 语法</title>
+      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</link>
+      <pubDate>Mon, 14 Oct 2019 20:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
+      <description>表达式和语句 JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。 语句（statement）是为了完成某种</description>
+    </item>
+    
+    <item>
+      <title>JS入门笔记1</title>
+      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sun, 13 Oct 2019 20:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>操作系统 JS 引擎举例 Chrome : V8 引擎，C++编写 Safari : JavaScriptCore IE : Chakra(JScript9) Edge : Chakra(Javascript) Node.js : V8 引擎 JS 引擎的主要功能 编译：把 JS 代码翻译为机器能执行的字节码/机器码 优化：改写</description>
+    </item>
+    
+    <item>
+      <title>JavaScript的诞生与发展</title>
+      <link>http://chenyiran.top/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Sun, 13 Oct 2019 16:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <description>JavaScript 的诞生（1994.5-1995.12） 1994 年，网景公司（Netscape）发布了 Navigator 浏览器 0.9 版，这是历史上第一个比较成熟的网络浏览器，但是只能</description>
+    </item>
     
     <item>
       <title>HTTP入门笔记2 - 请求和响应</title>
@@ -18,15 +45,6 @@
       
       <guid>http://chenyiran.top/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
       <description>发送请求 在浏览器的地址栏中输入域名 使用 curl 命令 User Agent 用户代理 比如浏览器和 curl 响应 用 if-else 判断路径 如果是已知路径，一般返回 200 如果是未知路径，一般返回 404 -</description>
-    </item>
-    
-    <item>
-      <title>JavaScript的诞生与发展</title>
-      <link>http://chenyiran.top/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
-      <pubDate>Sat, 12 Oct 2019 13:19:57 +0800</pubDate>
-      
-      <guid>http://chenyiran.top/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
-      <description>JavaScript 的诞生（1994.5-1995.12） 1994 年，网景公司（Netscape）发布了 Navigator 浏览器 0.9 版，这是历史上第一个比较成熟的网络浏览器，但是只能</description>
     </item>
     
     <item>
