@@ -6,10 +6,28 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Oct 2019 20:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 18:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS入门笔记6 - 数组</title>
+      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06/</link>
+      <pubDate>Wed, 16 Oct 2019 18:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06/</guid>
+      <description>JS 的数组 元素的数据类型可以不同 对象是随机存储的 不能通过数字下标，而是通过字符串下标 数组可以有任何 key 创建数组 新建 let arr = [1, 2, 3]; //实际常用写法 let</description>
+    </item>
+    
+    <item>
+      <title>JS入门笔记5 - 对象分类</title>
+      <link>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</link>
+      <pubDate>Wed, 16 Oct 2019 16:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/</guid>
+      <description>构造函数 可以构造出对象的函数 函数和原型结合 代码规范 构造函数首字母大写 被构造出来的对象首字母小写 原型公式 对象.__proto__===其构造函</description>
+    </item>
     
     <item>
       <title>JS入门笔记4 - 对象</title>

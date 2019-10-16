@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Archive - KIKI</title>
+  <title>JS入门笔记6 - 数组 - KIKI</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,6 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="KIKI" />
+  <meta name="description" content="JS 的数组 元素的数据类型可以不同 对象是随机存储的 不能通过数字下标，而是通过字符串下标 数组可以有任何 key 创建数组 新建 let arr = [1, 2, 3]; //实际常用写法 let" />
+
 
 
 
@@ -32,8 +34,8 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="http://chenyiran.top/post/" />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="KIKI" />
+<link rel="canonical" href="http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06/" />
+
 
 
 
@@ -56,18 +58,26 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://chenyiran.top/post/" />
+<meta property="og:title" content="JS入门笔记6 - 数组" />
+<meta property="og:description" content="JS 的数组 元素的数据类型可以不同 对象是随机存储的 不能通过数字下标，而是通过字符串下标 数组可以有任何 key 创建数组 新建 let arr = [1, 2, 3]; //实际常用写法 let" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://chenyiran.top/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06/" />
+<meta property="article:published_time" content="2019-10-16T18:19:57+08:00" />
+<meta property="article:modified_time" content="2019-10-16T18:19:57+08:00" />
+<meta itemprop="name" content="JS入门笔记6 - 数组">
+<meta itemprop="description" content="JS 的数组 元素的数据类型可以不同 对象是随机存储的 不能通过数字下标，而是通过字符串下标 数组可以有任何 key 创建数组 新建 let arr = [1, 2, 3]; //实际常用写法 let">
 
-<meta property="og:updated_time" content="2019-10-16T18:19:57+08:00" />
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2019-10-16T18:19:57&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-16T18:19:57&#43;08:00" />
+<meta itemprop="wordCount" content="724">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="JS入门笔记6 - 数组"/>
+<meta name="twitter:description" content="JS 的数组 元素的数据类型可以不同 对象是随机存储的 不能通过数字下标，而是通过字符串下标 数组可以有任何 key 创建数组 新建 let arr = [1, 2, 3]; //实际常用写法 let"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -212,177 +222,245 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
-    <div class="archive-title">
-      <span class="archive-post-counter">
-          18 posts In Total
-      </span>
-    </div>
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2019</h2>
+    <header class="post-header">
+      <h1 class="post-title">JS入门笔记6 - 数组</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-10-16" class="post-time">
+          2019-10-16
+        </time>
+        
+        
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2019-10-16" class="archive-post-time">
-        2019-10-16
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B06/" class="archive-post-link">
-          JS入门笔记6 - 数组
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2019-10-16" class="archive-post-time">
-        2019-10-16
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/" class="archive-post-link">
-          JS入门笔记5 - 对象分类
-        </a>
-      </span>
-    </div>
     
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#js-的数组">JS 的数组</a></li>
+<li><a href="#创建数组">创建数组</a></li>
+<li><a href="#删除数组中的元素">删除数组中的元素</a></li>
+<li><a href="#查看所有元素">查看所有元素</a></li>
+<li><a href="#查看单个属性">查看单个属性</a></li>
+<li><a href="#增加数组中的元素">增加数组中的元素</a></li>
+<li><a href="#修改数组中的元素">修改数组中的元素</a></li>
+<li><a href="#数组变换">数组变换</a>
+<ul>
+<li><a href="#map">map</a></li>
+<li><a href="#filter">filter</a></li>
+<li><a href="#reduce">reduce</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
 
-    <div class="archive-post">
-      <time datetime="2019-10-15" class="archive-post-time">
-        2019-10-15
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/" class="archive-post-link">
-          JS入门笔记4 - 对象
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2019-10-15" class="archive-post-time">
-        2019-10-15
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B03/" class="archive-post-link">
-          JS入门笔记3 - 数据类型
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-10-14" class="archive-post-time">
-        2019-10-14
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/" class="archive-post-link">
-          JS入门笔记2 - 语法
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-10-13" class="archive-post-time">
-        2019-10-13
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="archive-post-link">
-          JS入门笔记1
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-10-13" class="archive-post-time">
-        2019-10-13
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="archive-post-link">
-          JavaScript的诞生与发展
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-10-12" class="archive-post-time">
-        2019-10-12
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/" class="archive-post-link">
-          HTTP入门笔记2 - 请求和响应
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-10-12" class="archive-post-time">
-        2019-10-12
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="archive-post-link">
-          HTTP入门笔记1 - URL
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-10-11" class="archive-post-time">
-        2019-10-11
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/" class="archive-post-link">
-          CSS入门笔记5 - 动画
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
+    <div class="post-content">
       
-      <li  class="active" >
-        <a href="/post/">1</a>
-      </li>
+
+<h2 id="js-的数组">JS 的数组</h2>
+
+<ul>
+<li>元素的数据类型可以不同</li>
+<li>对象是随机存储的</li>
+<li>不能通过数字下标，而是通过字符串下标</li>
+<li>数组可以有任何 key</li>
+</ul>
+
+<h2 id="创建数组">创建数组</h2>
+
+<ul>
+<li><p>新建</p>
+
+<pre><code class="language-javascript">let arr = [1, 2, 3]; //实际常用写法
+let arr = new Array(1, 2, 3); //正式写法
+let arr = new Array(3); //当参数只有一个时，参数表示数组长度
+</code></pre></li>
+
+<li><p>转化</p>
+
+<pre><code class="language-javascript">let arr = &quot;1,2,3&quot;.split(&quot;,&quot;); //将字符串分割为数组
+let arr = &quot;123&quot;.split(&quot;&quot;);
+Array.from(&quot;123&quot;); //只在对象有下标且有length属性时可以使用该方法
+</code></pre></li>
+
+<li><p>伪数组</p>
+
+<pre><code class="language-javascript">let divList = document.querySelectorAll(&quot;div&quot;);
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>伪数组的原型链中没有数组的原型
+可以通过 Array.from 将伪数组转换为数组</p>
+</blockquote>
+
+<ul>
+<li><p>合并数组</p>
+
+<pre><code class="language-javascript">arr1.concat(arr2);
+</code></pre></li>
+
+<li><p>截取数组的一部分</p>
+
+<pre><code class="language-javascript">arr1.slice(1); //从第二个元素开始截取（包括第二个元素）
+arr1.slice(0); //全部截取，通常用于复制数组
+</code></pre></li>
+</ul>
+
+<h2 id="删除数组中的元素">删除数组中的元素</h2>
+
+<pre><code class="language-javascript">delete arr[&quot;0&quot;]; //删除第一个元素，数组长度不会改变
+arr.shift(); //删除第一个元素，数组长度会改变，并返回被删的元素
+arr.pop(); //删除最后一个元素，数组长度会改变，并返回被删的元素
+arr.splice(index, n); //从下标为index的元素开始，删除n个元素(包括下标为index元素)
+arr.splice(index, n, &quot;x&quot;); //并在删除位置添加'x'
+arr.splice(index, n, &quot;x&quot;, &quot;y&quot;); //并在删除位置添加'x','y'，删除元素数量和添加元素数量可以不相等
+</code></pre>
+
+<h2 id="查看所有元素">查看所有元素</h2>
+
+<pre><code class="language-javascript">for (let i = 0; i &lt; arr.length; i++) {
+  console.log(`${i}:${arr[i]}`);
+}
+//使用forEach
+arr.forEach(function(item, index) {
+  console.log(`${index}:${item}`);
+});
+</code></pre>
+
+<h2 id="查看单个属性">查看单个属性</h2>
+
+<pre><code class="language-javascript">arr[0]; //和对象一样
+arr[arr.length] === undefined; //索引越界
+arr[-1] === undefined;
+arr.indexOf(item); //查找某个元素是否在数组里
+arr.find(item =&gt; item % 2 === 0); //条件查找（返回元素）
+arr.findIndex(item =&gt; item % 2 === 0); //条件查找（返回索引）
+</code></pre>
+
+<h2 id="增加数组中的元素">增加数组中的元素</h2>
+
+<pre><code class="language-javascript">arr.push(newItem); //在数组的末尾添加元素，返回新长度
+arr.push(item1, item2); //在数组的末尾添加多个元素，返回新长度
+arr.unshift(newItem); //在数组的开头添加元素，返回新长度
+arr.unshift(item1, item2); //在数组的开头添加多个元素，返回新长度
+arr.splice(index, 0, item); //在下表为index的元素后面插入新元素
+</code></pre>
+
+<h2 id="修改数组中的元素">修改数组中的元素</h2>
+
+<pre><code class="language-javascript">arr.reverse(); //反转原数组
+arr.sort(); //从小到大排序数组
+arr.sort((a, b) =&gt; a - b); // 从大到小排序数组
+</code></pre>
+
+<h2 id="数组变换">数组变换</h2>
+
+<h3 id="map">map</h3>
+
+<pre><code class="language-javascript">arr2 = arr.map(item =&gt; item * 2);
+</code></pre>
+
+<h3 id="filter">filter</h3>
+
+<pre><code class="language-javascript">arr2 = arr.filter(item =&gt; item % 2 === 0);
+</code></pre>
+
+<h3 id="reduce">reduce</h3>
+
+<pre><code class="language-javascript">sum = arr.reduce((sum, item) =&gt; {
+  return sum + item;
+}, 0);
+</code></pre>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">KIKI</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2019-10-16
       
-      <li >
-        <a href="/post/page/2/">2</a>
-      </li>
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
       
-    </ul>
-  </nav>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/">
+            <span class="next-text nav-default">JS入门笔记5 - 对象分类</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
 
+  
+  
 
+  
 
+  
+  
 
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>
