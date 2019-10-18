@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="KIKI" />
-  <meta name="description" content="let i = 0 for(i = 0; i&amp;lt;6; i&#43;&#43;){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 以上代码将会打印出666666 因为" />
+  <meta name="description" content="为什么如下代码会打印出666666而不是012345？ let i = 0 for(i = 0; i&amp;lt;6; i&#43;&#43;){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 因为 setTimeout 是一个异步任务，浏览器会将其放到另一个任务队列里去，然" />
 
 
 
@@ -59,25 +59,25 @@
 
 
 <meta property="og:title" content="JS的执行时机" />
-<meta property="og:description" content="let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } 以上代码将会打印出666666 因为" />
+<meta property="og:description" content="为什么如下代码会打印出666666而不是012345？ let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } 因为 setTimeout 是一个异步任务，浏览器会将其放到另一个任务队列里去，然" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://chenyiran.top/post/0502-js%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" />
 <meta property="article:published_time" content="2019-10-17T18:19:57+08:00" />
 <meta property="article:modified_time" content="2019-10-17T18:19:57+08:00" />
 <meta itemprop="name" content="JS的执行时机">
-<meta itemprop="description" content="let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } 以上代码将会打印出666666 因为">
+<meta itemprop="description" content="为什么如下代码会打印出666666而不是012345？ let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } 因为 setTimeout 是一个异步任务，浏览器会将其放到另一个任务队列里去，然">
 
 
 <meta itemprop="datePublished" content="2019-10-17T18:19:57&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-17T18:19:57&#43;08:00" />
-<meta itemprop="wordCount" content="30">
+<meta itemprop="wordCount" content="335">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JS的执行时机"/>
-<meta name="twitter:description" content="let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } 以上代码将会打印出666666 因为"/>
+<meta name="twitter:description" content="为什么如下代码会打印出666666而不是012345？ let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } 因为 setTimeout 是一个异步任务，浏览器会将其放到另一个任务队列里去，然"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -247,13 +247,26 @@
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
   <div class="post-toc-content">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#为什么如下代码会打印出-666666-而不是-012345">为什么如下代码会打印出<code>666666</code>而不是<code>012345</code>？</a></li>
+<li><a href="#如果想让上面的代码打印出-012345-有什么方法">如果想让上面的代码打印出<code>012345</code>，有什么方法？</a></li>
+<li><a href="#除了使用-for-let-配合-还有什么方法可以打印出-012345">除了使用 for let 配合，还有什么方法可以打印出<code>012345</code>？</a></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <pre><code class="language-JavaScript">let i = 0
+      
+
+<h2 id="为什么如下代码会打印出-666666-而不是-012345">为什么如下代码会打印出<code>666666</code>而不是<code>012345</code>？</h2>
+
+<pre><code class="language-JavaScript">let i = 0
 for(i = 0; i&lt;6; i++){
   setTimeout(()=&gt;{
     console.log(i)
@@ -261,9 +274,41 @@ for(i = 0; i&lt;6; i++){
 }
 </code></pre>
 
-<p>以上代码将会打印出<code>666666</code></p>
+<p>因为 setTimeout 是一个异步任务，浏览器会将其放到另一个任务队列里去，然后继续执行下面的代码，执行完毕之后才会去执行 setTimeout 函数里的任务，此时六次 for 循环已经结束，i=6，因此 setTimeout 会打印六次<code>6</code></p>
 
-<p>因为</p>
+<h2 id="如果想让上面的代码打印出-012345-有什么方法">如果想让上面的代码打印出<code>012345</code>，有什么方法？</h2>
+
+<p>采用 for let 配合</p>
+
+<pre><code class="language-JavaScript">for(let i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+}
+</code></pre>
+
+<p>因为 let 变量的作用域只在当前函数中，所以每次 for 循环都会生成一个新的 i，六次 for 循环结束之后，就会有 6 个 i，因此 setTimeout 会分别打印出这 6 个 i，即<code>012345</code></p>
+
+<h2 id="除了使用-for-let-配合-还有什么方法可以打印出-012345">除了使用 for let 配合，还有什么方法可以打印出<code>012345</code>？</h2>
+
+<p>在 for 循环中使用 let 或 const 声明一个新变量存储 i 的值</p>
+
+<pre><code class="language-javascript">let i = 0;
+for (i = 0; i &lt; 6; i++) {
+  let n = i;
+  setTimeout(() =&gt; {
+    console.log(n);
+  }, 0);
+}
+
+let i = 0;
+for (i = 0; i &lt; 6; i++) {
+  const n = i;
+  setTimeout(() =&gt; {
+    console.log(n);
+  }, 0);
+}
+</code></pre>
 
     </div>
 

@@ -17,7 +17,7 @@
       <pubDate>Thu, 17 Oct 2019 18:19:57 +0800</pubDate>
       
       <guid>http://chenyiran.top/post/0502-js%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
-      <description>let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 以上代码将会打印出666666 因为</description>
+      <description>为什么如下代码会打印出666666而不是012345？ let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 因为 setTimeout 是一个异步任务，浏览器会将其放到另一个任务队列里去，然</description>
     </item>
     
     <item>
