@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS入门笔记5 - 动画 - KIKI</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="KIKI" />
+  <meta name="description" content="浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+<link rel="canonical" href="http://chenyiran.top/post/0300-css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="CSS入门笔记5 - 动画" />
+<meta property="og:description" content="浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://chenyiran.top/post/0300-css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B05/" />
+<meta property="article:published_time" content="2019-10-11T16:19:57+08:00" />
+<meta property="article:modified_time" content="2019-10-11T16:19:57+08:00" />
+<meta itemprop="name" content="CSS入门笔记5 - 动画">
+<meta itemprop="description" content="浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计">
+
+
+<meta itemprop="datePublished" content="2019-10-11T16:19:57&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-11T16:19:57&#43;08:00" />
+<meta itemprop="wordCount" content="642">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS入门笔记5 - 动画"/>
+<meta name="twitter:description" content="浏览器渲染过程 根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两棵树合并成一颗渲染数（render tree） Layout 布局（文档流、盒模型、计"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">KIKI</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://chenyiran.top/about/">About</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      KIKI
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://chenyiran.top/about/">About</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">CSS入门笔记5 - 动画</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-10-11" class="post-time">
+          2019-10-11
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#浏览器渲染过程">浏览器渲染过程</a></li>
+<li><a href="#更新样式">更新样式</a></li>
+<li><a href="#更新方式">更新方式</a></li>
+<li><a href="#css-动画优化">CSS 动画优化</a></li>
+<li><a href="#transform">transform</a></li>
+<li><a href="#transform-translate">transform:translate</a></li>
+<li><a href="#transform-scale">transform:scale</a></li>
+<li><a href="#transform-rotate">transform:rotate</a></li>
+<li><a href="#transform-skew">transform:skew</a></li>
+<li><a href="#transition">transition</a></li>
+<li><a href="#animation">animation</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h2 id="浏览器渲染过程">浏览器渲染过程</h2>
+
+<ol>
+<li>根据 HTML 构建 HTML 树（DOM）</li>
+<li>根据 CSS 构建 CSS 树（CSSOM）</li>
+<li>将两棵树合并成一颗渲染数（render tree）</li>
+<li>Layout 布局（文档流、盒模型、计算大小和位置）</li>
+<li>Paint 绘制（颜色、阴影等）</li>
+<li>Composite 合成（根据层叠关系展示画面）</li>
+</ol>
+
+<h2 id="更新样式">更新样式</h2>
+
+<ul>
+<li>使用 JS 更新样式，例：
+
+<ul>
+<li>div.style.background=&lsquo;red&rsquo; //修改样式</li>
+<li>div.style.display=&lsquo;none&rsquo; //修改样式</li>
+<li>div.classList.add(&lsquo;red&rsquo;) //添加类</li>
+<li>div.remove() //删除节点</li>
+</ul></li>
+</ul>
+
+<h2 id="更新方式">更新方式</h2>
+
+<ul>
+<li>JS/CSS&gt;样式&gt;布局&gt;绘制&gt;合成
+
+<ul>
+<li>例如 div.remove()</li>
+</ul></li>
+<li>JS/CSS&gt;样式&gt;绘制&gt;合成
+
+<ul>
+<li>例如改变背景颜色</li>
+</ul></li>
+<li>JS/CSS&gt;样式&gt;合成
+
+<ul>
+<li>例如改变 transform</li>
+</ul></li>
+</ul>
+
+<h2 id="css-动画优化">CSS 动画优化</h2>
+
+<ul>
+<li>JS 优化
+
+<ul>
+<li>使用 requestAnimationFrame 代替 setTimeout 或 setInterval</li>
+</ul></li>
+<li>CSS 优化
+
+<ul>
+<li>使用 will-change 或 translate</li>
+</ul></li>
+</ul>
+
+<h2 id="transform">transform</h2>
+
+<ul>
+<li>translate 位移</li>
+<li>scale 缩放</li>
+<li>rotate 旋转</li>
+<li>skew 倾斜</li>
+</ul>
+
+<blockquote>
+<ul>
+<li>一般都需要配合 transition 过渡</li>
+<li>inline 元素不支持 transform，需要先变成 block</li>
+<li>skew 用得较少</li>
+<li>可以组合使用，例如 transform:scale(0.5) translate(-10%,-10%);</li>
+<li>更多信息：<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform">https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform</a></li>
+</ul>
+</blockquote>
+
+<h2 id="transform-translate">transform:translate</h2>
+
+<ul>
+<li>transform: translate(12px, 50%);</li>
+<li>transform: translateX(2em);</li>
+<li>transform: translateY(3in);</li>
+<li>transform: translateZ(2px); (父容器需要设置 transform:perspective(17px))</li>
+<li>transform: scale3d(2.5, 1.2, 0.3);</li>
+</ul>
+
+<blockquote>
+<p>translate(-50%,-50%)可使绝对定位元素居中</p>
+</blockquote>
+
+<h2 id="transform-scale">transform:scale</h2>
+
+<ul>
+<li>transform: scale(2, 0.5);</li>
+<li>transform: scaleX(2);</li>
+<li>transform: scaleY(0.5);</li>
+</ul>
+
+<h2 id="transform-rotate">transform:rotate</h2>
+
+<ul>
+<li>transform: rotate(0.5turn);</li>
+<li>transform: rotateX(10deg);</li>
+<li>transform: rotateY(10deg);</li>
+<li>transform: rotateZ(10deg);</li>
+</ul>
+
+<blockquote>
+<p>一般用于 360 度旋转制作 loading</p>
+</blockquote>
+
+<h2 id="transform-skew">transform:skew</h2>
+
+<ul>
+<li>transform: skew(30deg, 20deg);</li>
+<li>transform: skewX(30deg);</li>
+<li>transform: skewY(1.07rad);</li>
+</ul>
+
+<h2 id="transition">transition</h2>
+
+<ul>
+<li>补充中间帧</li>
+<li>transition: 属性名 过渡市场 过渡方式 延迟时长</li>
+<li>可以用逗号分隔两个不同的属性</li>
+<li>可以用 all 表示所有属性</li>
+<li>过渡方式：linear | ease | ease-in | ease-out | ease-in-out</li>
+</ul>
+
+<blockquote>
+<p>不是所有属性都可以过渡</p>
+
+<ul>
+<li>display:none=&gt;block 无法过渡，一般使用 visibility:hidden=&gt;visible</li>
+<li>过渡必须要有起始</li>
+</ul>
+</blockquote>
+
+<h2 id="animation">animation</h2>
+
+<ol>
+<li><p>声明关键帧</p>
+
+<pre><code class="language-CSS">@keyframes slidein{
+from{
+  transform:translateX(0%);
+}
+to{
+  transform:translateX(100%);
+}
+}
+@keyframes indentifier{
+0%{top:0;left:0;}
+30%{top:50px;}
+100%{top:100px;left:100%;}
+}
+</code></pre></li>
+
+<li><p>animation</p></li>
+</ol>
+
+<ul>
+<li>时长 : 1s | 1000ms</li>
+<li>过渡方式</li>
+<li>延迟时长</li>
+<li>次数 : 3 | 2.4 |infinite</li>
+<li>方向 : reverse | alternate | alternate-reverse</li>
+<li>填充模式 : none | forwards | backwards | both</li>
+<li>是否暂停 : paused | running</li>
+<li>动画名</li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">KIKI</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2019-10-11
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/0400-http%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">HTTP入门笔记1 - URL</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/0300-css%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B04/">
+            <span class="next-text nav-default">CSS入门笔记4 - 定位</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:772765729@email.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+
+
+<a href="http://chenyiran.top/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        KIKI
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
