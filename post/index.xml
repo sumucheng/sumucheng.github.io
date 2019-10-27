@@ -6,10 +6,19 @@
     <description>Recent content in Posts on KIKI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Oct 2019 18:19:57 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2019 18:19:57 +0800</lastBuildDate>
     
 	<atom:link href="http://chenyiran.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jQuery设计思想</title>
+      <link>http://chenyiran.top/post/0600-jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/</link>
+      <pubDate>Sun, 27 Oct 2019 18:19:57 +0800</pubDate>
+      
+      <guid>http://chenyiran.top/post/0600-jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/</guid>
+      <description>jQuery 如何获取元素 jQuery 的基本设计思想和主要用法，就是&amp;rdquo;选择某个网页元素，然后对其进行某种操作&amp;rdquo;。这是它区别于其他 Javascript 库的根本</description>
+    </item>
     
     <item>
       <title>JS的执行时机</title>
